@@ -3,7 +3,6 @@ import json
 import pandas as pd
 from pathlib import Path
 from datetime import datetime
-from app.config import Config
 
 # --- 1. Configuración da Páxina ---
 st.set_page_config(
@@ -12,16 +11,21 @@ st.set_page_config(
     layout="wide"
 )
 
+# Definir rutas relativas ao script actual (standalone)
+BASE_DIR = Path(__file__).resolve().parent
+WATCHLIST_PATH = BASE_DIR / "watchlist.json"
+ANALYSIS_DIR = BASE_DIR / "Analisis"
+
 # --- 2. Funcións de Carga de Datos ---
 @st.cache_data
 def load_watchlist():
     """Carga o ficheiro watchlist.json e convérteo nun DataFrame de Pandas."""
-    watchlist_path = Config.BASE_DIR / "watchlist.json"
-    if not watchlist_path.exists():
+    if not WATCHLIST_PATH.exists():
+        st.error(f"Non se atoupa o ficheiro: {WATCHLIST_PATH}")
         return []
     
     try:
-        with open(watchlist_path, "r", encoding="utf-8") as f:
+        with open(WATCHLIST_PATH, "r", encoding="utf-8") as f:
             data = json.load(f)
         return data
     except Exception as e:
@@ -30,7 +34,7 @@ def load_watchlist():
 
 def get_latest_report(ticker: str) -> str:
     """Busca e le o último informe de análise dispoñible para un ticker."""
-    ticker_dir = Config.ANALYSIS_DIR / ticker
+    ticker_dir = ANALYSIS_DIR / ticker
     if not ticker_dir.exists():
         return "Aínda non hai análises para esta acción."
     
