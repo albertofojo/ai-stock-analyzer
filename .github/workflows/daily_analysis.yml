@@ -52,5 +52,5 @@ jobs:
             git commit -m "chore: automated daily watchlist analysis update [skip ci]"
             git push
           else
-            print("✅ No changes to push")
+            echo "✅ No changes to push"
           fi
