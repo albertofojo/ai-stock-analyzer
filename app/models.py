@@ -43,7 +43,7 @@ class PortfolioAnalysis(BaseModel):
     """
     ticker: str
     action: str
-    short_reason: str = Field(..., description="Short reason for table (max 10 words)")
+    short_reason: Optional[str] = Field(default="No reason provided", description="Short reason for table (max 10 words)")
     long_reason: str = Field(..., description="Details reasoning")
 
 class Position(BaseModel):
