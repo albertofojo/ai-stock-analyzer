@@ -80,6 +80,8 @@ if not df.empty:
             emoji = "🟢 "
         elif "SELL" in action:
             emoji = "🔴 "
+        elif "SHORT" in action:
+            emoji = "📉 "
         elif "HOLD" in action:
             emoji = "🟡 "
         elif "WAIT" in action:
