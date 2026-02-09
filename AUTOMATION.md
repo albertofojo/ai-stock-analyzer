@@ -17,6 +17,7 @@ O ficheiro de configuración atópase en `.github/workflows/daily_analysis.yml`.
 3.  **Persistencia:**
     *   Se o script xera novas análises ou actualiza as datas en `watchlist.json`, **o "bot" fai un commit e sube os cambios ao teu repositorio automaticamente**.
     *   Poderás ver os novos ficheiros aparecendo na carpeta `Analisis/`.
+    *   **Formato de ficheiro:** As análises automáticas terán o sufixo `-WATCH` (ex: `TEF.MC-20240210-WATCH.md`) para distinguilas das manuais.
 
 ## 2. Configuración Necesaria (Seguridade)
 

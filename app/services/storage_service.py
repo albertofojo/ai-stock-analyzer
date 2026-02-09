@@ -44,20 +44,22 @@ class StorageService:
         return history_context
 
     @classmethod
-    def save_analysis(cls, ticker: str, content: str) -> Path:
+    def save_analysis(cls, ticker: str, content: str, suffix: str = "") -> Path:
         """
         Saves the analysis to a file with versioning if needed.
+        suffix: Optional string to append to filename (e.g. "-WATCH")
         """
         ticker_dir = cls.get_ticker_dir(ticker)
         today_str = datetime.now().strftime("%Y%m%d")
         
-        filename = f"{ticker}-{today_str}.md"
-        file_path = ticker_dir / filename
+        # Base filename: TICKER-YYYYMMDD[-SUFFIX].md
+        base_name = f"{ticker}-{today_str}{suffix}"
+        file_path = ticker_dir / f"{base_name}.md"
         
-        # Versioning handling (e.g., _2.md) if file exists
+        # Versioning handling
         counter = 2
         while file_path.exists():
-            file_path = ticker_dir / f"{ticker}-{today_str}_{counter}.md"
+            file_path = ticker_dir / f"{base_name}_{counter}.md"
             counter += 1
             
         file_path.write_text(content, encoding="utf-8")
