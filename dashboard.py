@@ -138,7 +138,7 @@ st.subheader("📋 Estado da Watchlist")
 # Mostramos a táboa con algunhas melloras visuais
 st.dataframe(
     df[["ticker", "name", "display_action", "action_date", "last_run", "frequency_days"]],
-    use_container_width=True,
+    width=True,
     hide_index=True,
     column_config={
         "ticker": "Símbolo",
