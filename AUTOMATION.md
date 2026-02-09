@@ -50,3 +50,33 @@ Se queres cambiar a configuración sen editar o código, vai a **Settings** > **
 Podes ver o historial de execucións na pestana **Actions** do teu repositorio.
 *   ✅ **Verde:** A análise completouse correctamente.
 *   ❌ **Vermello:** Houbo un erro (podes pulsar para ver os logs e depurar).
+
+## 4. Visualización de Resultados (Dashboard)
+
+Para ver o estado da túa carteira e ler os informes xerados sen ter que navegar polos ficheiros do repositorio, creouse un **Dashboard Web** interactivo.
+
+### 💻 Execución Local
+
+Podes executar o panel no teu propio ordenador:
+
+1.  Asegúrate de ter as dependencias instaladas: `pip install -r requirements.txt` (inclúe `streamlit`).
+2.  Executa o seguinte comando:
+    ```bash
+    python -m streamlit run dashboard.py
+    ```
+3.  Abrirase o teu navegador en `http://localhost:8501`.
+
+### ☁️ Despregue na Nube (Streamlit Community Cloud)
+
+A forma recomendada de usar isto é aloxalo gratuitamente na nube de Streamlit, conectado ao teu repositorio GitHub. Así terás unha URL pública (e privada se o repo o é) para consultar dende o móbil.
+
+**Pasos:**
+
+1.  Vai a [share.streamlit.io](https://share.streamlit.io) e inicia sesión coa túa conta de GitHub.
+2.  Pulsa en **"New app"**.
+3.  Selecciona o teu repositorio (`albertofojo/ai-stock-analyzer`).
+4.  Branch: `main`.
+5.  Main file path: `dashboard.py`.
+6.  Pulsa **"Deploy!"**.
+
+En uns minutos, a túa web estará lista. Cada vez que o "bot" de GitHub Actions actualice `watchlist.json` ou cree novos informes na carpeta `Analisis/`, a web actualizarase automaticamente.
