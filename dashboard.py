@@ -64,6 +64,49 @@ if not watchlist_data:
 # Converter a DataFrame para facilitar a manipulación
 df = pd.DataFrame(watchlist_data)
 
+# Procesar datos para visualización
+if not df.empty:
+    # Asegurar que existem as colunas
+    if "action_date" not in df.columns:
+        df["action_date"] = "N/A"
+    
+    def format_action(row):
+        action = str(row.get("last_action", "N/A")).upper()
+        date_run = row.get("last_run", "")
+        date_action = row.get("action_date", "")
+        
+        # Emoji base
+        if "BUY" in action:
+            emoji = "🟢 "
+        elif "SELL" in action:
+            emoji = "🔴 "
+        elif "HOLD" in action:
+            emoji = "🟡 "
+        elif "WAIT" in action:
+            emoji = "⚪ "
+        else:
+            emoji = ""
+            
+        # Detectar Cambio Recente (Hoxe ou onte)
+        is_recent = False
+        try:
+            today = datetime.now().date()
+            run_dt = datetime.strptime(date_run, "%Y-%m-%d").date()
+            action_dt = datetime.strptime(date_action, "%Y-%m-%d").date()
+            
+            # Se a análise foi recente E a acción cambiou nesa data
+            diff_days = (today - run_dt).days
+            if diff_days <= 1 and run_dt == action_dt:
+                is_recent = True
+        except:
+            pass
+            
+        if is_recent:
+            return f"🔔 {emoji}{action}"
+        return f"{emoji}{action}"
+
+    df["display_action"] = df.apply(format_action, axis=1)
+
 # --- 4. Métricas Clave (KPIs) ---
 # Calculamos cantas accións hai en cada estado
 if "last_action" in df.columns:
@@ -86,20 +129,20 @@ st.subheader("📋 Estado da Watchlist")
 
 # Mostramos a táboa con algunhas melloras visuais
 st.dataframe(
-    df[["ticker", "name", "last_action", "last_run", "frequency_days"]],
+    df[["ticker", "name", "display_action", "action_date", "last_run", "frequency_days"]],
     use_container_width=True,
     hide_index=True,
     column_config={
         "ticker": "Símbolo",
         "name": "Nome",
-        "last_action": st.column_config.TextColumn(
-            "Última Acción",
-            help="Recomendación da IA baseada na última análise",
-            validate="^(BUY|HOLD|SELL|WAIT).*$"
+        "display_action": st.column_config.TextColumn(
+            "Estado Actual",
+            help="🔔 indica cambio recente (hoxe/onte)"
         ),
-        "last_run": "Última Análise",
+        "action_date": "Dende (Data Cambio)",
+        "last_run": "Última Revisión",
         "frequency_days": st.column_config.NumberColumn(
-            "Frecuencia (Días)",
+            "Frecuencia",
             format="%d días"
         )
     }
