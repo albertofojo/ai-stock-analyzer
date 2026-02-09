@@ -76,18 +76,24 @@ if not df.empty:
         date_action = row.get("action_date", "")
         
         # Emoji base
-        if "BUY" in action:
+        if "STRONG BUY" in action:
+            emoji = "🚀 "
+        elif "BUY" in action:
             emoji = "🟢 "
+        elif "STRONG SELL" in action:
+            emoji = "🆘 "
         elif "SELL" in action:
             emoji = "🔴 "
         elif "SHORT" in action:
             emoji = "📉 "
         elif "HOLD" in action:
             emoji = "🟡 "
-        elif "WAIT" in action:
-            emoji = "⚪ "
+        elif "WAIT" in action or "WATCH" in action:
+            emoji = "⏱️ "
+        elif action in ["NONE", "N/A", "UNKNOWN"]:
+            emoji = "❓ "
         else:
-            emoji = ""
+            emoji = "⚪ "
             
         # Detectar Cambio Recente (Hoxe ou onte)
         is_recent = False

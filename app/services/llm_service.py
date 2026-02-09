@@ -209,7 +209,7 @@ Target Ticker: **{data.name}** ({data.ticker})
 ### INSTRUCTIONS:
 1. **Consistency Check:** Refer to the "Memory" block. Has the thesis changed?
 2. **Apply Rules:** Strictly apply the MA200 and PER < 50 rules.
-3. **Verdict:** Provide a clear action (BUY, HOLD, SELL, WAIT).
+3. **Verdict:** Provide a clear action (BUY, HOLD, SELL, WAIT, SHORT, STRONG BUY, STRONG SELL).
 4. **Output Language:** Spanish.
 5. **Tone:** Professional but direct (Miguel Persona).
 """
