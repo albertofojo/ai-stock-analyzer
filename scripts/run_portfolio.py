@@ -20,7 +20,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 logger = logging.getLogger(__name__)
 
 def main():
-    print("🚀 Miguel AI Portfolio Analyzer - Production Ready")
+    print("🚀 AI Portfolio Analyzer - Production Ready")
     
     try:
         Config.validate()
@@ -132,7 +132,7 @@ def main():
     
     with open(report_path, "w", encoding="utf-8") as f:
         f.write(f"# 📊 Portfolio Analysis - {date_str}\n\n")
-        f.write("## 1. Executive Summary (Miguel AI)\n")
+        f.write("## 1. Executive Summary (AI Analyst)\n")
         f.write(global_summary + "\n\n")
         f.write("## 2. Position Details\n")
         f.write("| Ticker | Price | Dist MA200 | PER | Action | Reason |\n")

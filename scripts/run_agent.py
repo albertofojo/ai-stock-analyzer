@@ -11,7 +11,7 @@ from app.services.llm_service import LLMService
 from app.services.storage_service import StorageService
 
 def main():
-    print("🚀 Miguel AI Agent - Interactive Mode")
+    print("🚀 AI Stock Analyzer - Interactive Mode")
     print(f"Loaded Rules from: {Config.RULES_FILE}")
     
     # Initialize Services
