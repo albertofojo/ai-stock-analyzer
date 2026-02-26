@@ -3,9 +3,9 @@
         "ticker": "BKY.MC",
         "name": "BERKELEY",
         "frequency_days": 1,
-        "last_run": "2026-02-25",
-        "last_action": "none",
-        "action_date": "2026-02-25"
+        "last_run": "2026-02-26",
+        "last_action": "BUY",
+        "action_date": "2026-02-26"
     },
     {
         "ticker": "ABG.P.MC",
@@ -18,7 +18,7 @@
         "ticker": "LDA.MC",
         "name": "LINEA DIRECT",
         "frequency_days": 1,
-        "last_run": "2026-02-25",
+        "last_run": "2026-02-26",
         "last_action": "buy",
         "action_date": "2026-02-21"
     },
@@ -26,23 +26,23 @@
         "ticker": "CITY.MC",
         "name": "INTERCITY",
         "frequency_days": 1,
-        "last_run": "2026-02-25",
-        "last_action": "None",
-        "action_date": "2026-02-25"
+        "last_run": "2026-02-26",
+        "last_action": "BUY",
+        "action_date": "2026-02-26"
     },
     {
         "ticker": "NTGY.MC",
         "name": "NATURGY",
         "frequency_days": 1,
-        "last_run": "2026-02-25",
-        "last_action": "buy",
-        "action_date": "2026-02-18"
+        "last_run": "2026-02-26",
+        "last_action": "BUY",
+        "action_date": "2026-02-26"
     },
     {
         "ticker": "ADX.MC",
         "name": "AUDAX",
         "frequency_days": 1,
-        "last_run": "2026-02-25",
+        "last_run": "2026-02-26",
         "last_action": "buy",
         "action_date": "2026-02-18"
     },
@@ -50,23 +50,23 @@
         "ticker": "MDF.MC",
         "name": "D.FELGUERA",
         "frequency_days": 1,
-        "last_run": "2026-02-25",
-        "last_action": "none",
-        "action_date": "2026-02-25"
+        "last_run": "2026-02-26",
+        "last_action": "NO_SIGNAL",
+        "action_date": "2026-02-26"
     },
     {
         "ticker": "PHM.MC",
         "name": "PHARMAMAR",
         "frequency_days": 1,
-        "last_run": "2026-02-25",
-        "last_action": "buy",
-        "action_date": "2026-02-25"
+        "last_run": "2026-02-26",
+        "last_action": "SELL",
+        "action_date": "2026-02-26"
     },
     {
         "ticker": "IAG.MC",
         "name": "INT.CONS.AIR",
         "frequency_days": 1,
-        "last_run": "2026-02-25",
+        "last_run": "2026-02-26",
         "last_action": "buy",
         "action_date": "2026-02-16"
     },
@@ -74,15 +74,15 @@
         "ticker": "TEF.MC",
         "name": "TELEFONICA",
         "frequency_days": 1,
-        "last_run": "2026-02-25",
-        "last_action": "none",
-        "action_date": "2026-02-24"
+        "last_run": "2026-02-26",
+        "last_action": "wait",
+        "action_date": "2026-02-26"
     },
     {
         "ticker": "TEP.PA",
         "name": "TELEPERFORMANCE",
         "frequency_days": 1,
-        "last_run": "2026-02-25",
+        "last_run": "2026-02-26",
         "last_action": "buy",
         "action_date": "2026-02-22"
     },
@@ -90,7 +90,7 @@
         "ticker": "PLX.PA",
         "name": "PLUXEE FRANCE SA",
         "frequency_days": 1,
-        "last_run": "2026-02-25",
+        "last_run": "2026-02-26",
         "last_action": "buy",
         "action_date": "2026-02-23"
     },
@@ -98,7 +98,7 @@
         "ticker": "EEFT",
         "name": "EURONET WORLDWIDE INC",
         "frequency_days": 1,
-        "last_run": "2026-02-25",
+        "last_run": "2026-02-26",
         "last_action": "buy",
         "action_date": "2026-02-16"
     },
@@ -106,7 +106,7 @@
         "ticker": "PYPL",
         "name": "PAYPAL HOLDINGS INC",
         "frequency_days": 1,
-        "last_run": "2026-02-25",
+        "last_run": "2026-02-26",
         "last_action": "buy",
         "action_date": "2026-02-25"
     },
@@ -114,7 +114,7 @@
         "ticker": "QFIN",
         "name": "QFIN HLDGS SP ADS-A",
         "frequency_days": 1,
-        "last_run": "2026-02-25",
+        "last_run": "2026-02-26",
         "last_action": "buy",
         "action_date": "2026-02-09"
     }
