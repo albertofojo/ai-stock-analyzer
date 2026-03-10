@@ -3,9 +3,9 @@
         "ticker": "BKY.MC",
         "name": "BERKELEY",
         "frequency_days": 1,
-        "last_run": "2026-03-09",
-        "last_action": "BUY",
-        "action_date": "2026-03-07"
+        "last_run": "2026-03-10",
+        "last_action": "NONE",
+        "action_date": "2026-03-10"
     },
     {
         "ticker": "ABG.P.MC",
@@ -18,23 +18,23 @@
         "ticker": "LDA.MC",
         "name": "LINEA DIRECT",
         "frequency_days": 1,
-        "last_run": "2026-03-09",
-        "last_action": "buy",
-        "action_date": "2026-03-09"
+        "last_run": "2026-03-10",
+        "last_action": "Buy",
+        "action_date": "2026-03-10"
     },
     {
         "ticker": "CITY.MC",
         "name": "INTERCITY",
         "frequency_days": 1,
-        "last_run": "2026-03-09",
-        "last_action": "Buy",
-        "action_date": "2026-03-09"
+        "last_run": "2026-03-10",
+        "last_action": "buy",
+        "action_date": "2026-03-10"
     },
     {
         "ticker": "NTGY.MC",
         "name": "NATURGY",
         "frequency_days": 1,
-        "last_run": "2026-03-09",
+        "last_run": "2026-03-10",
         "last_action": "buy",
         "action_date": "2026-03-08"
     },
@@ -42,7 +42,7 @@
         "ticker": "ADX.MC",
         "name": "AUDAX",
         "frequency_days": 1,
-        "last_run": "2026-03-09",
+        "last_run": "2026-03-10",
         "last_action": "buy",
         "action_date": "2026-03-08"
     },
@@ -50,15 +50,15 @@
         "ticker": "MDF.MC",
         "name": "D.FELGUERA",
         "frequency_days": 1,
-        "last_run": "2026-03-09",
-        "last_action": "BUY",
-        "action_date": "2026-03-09"
+        "last_run": "2026-03-10",
+        "last_action": "none",
+        "action_date": "2026-03-10"
     },
     {
         "ticker": "PHM.MC",
         "name": "PHARMAMAR",
         "frequency_days": 1,
-        "last_run": "2026-03-09",
+        "last_run": "2026-03-10",
         "last_action": "Buy",
         "action_date": "2026-03-09"
     },
@@ -66,7 +66,7 @@
         "ticker": "IAG.MC",
         "name": "INT.CONS.AIR",
         "frequency_days": 1,
-        "last_run": "2026-03-09",
+        "last_run": "2026-03-10",
         "last_action": "BUY",
         "action_date": "2026-03-09"
     },
@@ -74,23 +74,23 @@
         "ticker": "TEF.MC",
         "name": "TELEFONICA",
         "frequency_days": 1,
-        "last_run": "2026-03-09",
-        "last_action": "none",
-        "action_date": "2026-03-09"
+        "last_run": "2026-03-10",
+        "last_action": "short",
+        "action_date": "2026-03-10"
     },
     {
         "ticker": "TEP.PA",
         "name": "TELEPERFORMANCE",
         "frequency_days": 1,
-        "last_run": "2026-03-09",
-        "last_action": "buy",
-        "action_date": "2026-03-09"
+        "last_run": "2026-03-10",
+        "last_action": "Buy",
+        "action_date": "2026-03-10"
     },
     {
         "ticker": "PLX.PA",
         "name": "PLUXEE FRANCE SA",
         "frequency_days": 1,
-        "last_run": "2026-03-09",
+        "last_run": "2026-03-10",
         "last_action": "buy",
         "action_date": "2026-02-28"
     },
@@ -98,7 +98,7 @@
         "ticker": "EEFT",
         "name": "EURONET WORLDWIDE INC",
         "frequency_days": 1,
-        "last_run": "2026-03-09",
+        "last_run": "2026-03-10",
         "last_action": "buy",
         "action_date": "2026-02-16"
     },
@@ -106,16 +106,16 @@
         "ticker": "PYPL",
         "name": "PAYPAL HOLDINGS INC",
         "frequency_days": 1,
-        "last_run": "2026-03-09",
-        "last_action": "buy",
-        "action_date": "2026-03-05"
+        "last_run": "2026-03-10",
+        "last_action": "BUY",
+        "action_date": "2026-03-10"
     },
     {
         "ticker": "QFIN",
         "name": "QFIN HLDGS SP ADS-A",
         "frequency_days": 1,
-        "last_run": "2026-03-09",
-        "last_action": "Buy",
-        "action_date": "2026-03-09"
+        "last_run": "2026-03-10",
+        "last_action": "buy",
+        "action_date": "2026-03-10"
     }
 ]
