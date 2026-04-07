@@ -3,9 +3,9 @@
         "ticker": "BKY.MC",
         "name": "BERKELEY",
         "frequency_days": 1,
-        "last_run": "2026-04-06",
-        "last_action": "BUY",
-        "action_date": "2026-04-06"
+        "last_run": "2026-04-07",
+        "last_action": "Neutral",
+        "action_date": "2026-04-07"
     },
     {
         "ticker": "ABG.P.MC",
@@ -18,47 +18,47 @@
         "ticker": "LDA.MC",
         "name": "LINEA DIRECT",
         "frequency_days": 1,
-        "last_run": "2026-04-06",
-        "last_action": "buy",
-        "action_date": "2026-03-31"
+        "last_run": "2026-04-07",
+        "last_action": "BUY",
+        "action_date": "2026-04-07"
     },
     {
         "ticker": "CITY.MC",
         "name": "INTERCITY",
         "frequency_days": 1,
-        "last_run": "2026-04-06",
-        "last_action": "short",
-        "action_date": "2026-04-06"
+        "last_run": "2026-04-07",
+        "last_action": "buy",
+        "action_date": "2026-04-07"
     },
     {
         "ticker": "NTGY.MC",
         "name": "NATURGY",
         "frequency_days": 1,
-        "last_run": "2026-04-06",
-        "last_action": "buy",
-        "action_date": "2026-03-29"
+        "last_run": "2026-04-07",
+        "last_action": "Buy",
+        "action_date": "2026-04-07"
     },
     {
         "ticker": "ADX.MC",
         "name": "AUDAX",
         "frequency_days": 1,
-        "last_run": "2026-04-06",
-        "last_action": "BUY",
-        "action_date": "2026-04-06"
+        "last_run": "2026-04-07",
+        "last_action": "buy",
+        "action_date": "2026-04-07"
     },
     {
         "ticker": "MDF.MC",
         "name": "D.FELGUERA",
         "frequency_days": 1,
-        "last_run": "2026-04-06",
-        "last_action": "none",
-        "action_date": "2026-04-06"
+        "last_run": "2026-04-07",
+        "last_action": "wait",
+        "action_date": "2026-04-07"
     },
     {
         "ticker": "PHM.MC",
         "name": "PHARMAMAR",
         "frequency_days": 1,
-        "last_run": "2026-04-06",
+        "last_run": "2026-04-07",
         "last_action": "buy",
         "action_date": "2026-04-04"
     },
@@ -66,7 +66,7 @@
         "ticker": "IAG.MC",
         "name": "INT.CONS.AIR",
         "frequency_days": 1,
-        "last_run": "2026-04-06",
+        "last_run": "2026-04-07",
         "last_action": "buy",
         "action_date": "2026-04-04"
     },
@@ -74,15 +74,15 @@
         "ticker": "TEF.MC",
         "name": "TELEFONICA",
         "frequency_days": 1,
-        "last_run": "2026-04-06",
-        "last_action": "WAIT",
-        "action_date": "2026-04-06"
+        "last_run": "2026-04-07",
+        "last_action": "BUY",
+        "action_date": "2026-04-07"
     },
     {
         "ticker": "TEP.PA",
         "name": "TELEPERFORMANCE",
         "frequency_days": 1,
-        "last_run": "2026-04-06",
+        "last_run": "2026-04-07",
         "last_action": "buy",
         "action_date": "2026-04-04"
     },
@@ -90,15 +90,15 @@
         "ticker": "PLX.PA",
         "name": "PLUXEE FRANCE SA",
         "frequency_days": 1,
-        "last_run": "2026-04-06",
-        "last_action": "buy",
-        "action_date": "2026-04-05"
+        "last_run": "2026-04-07",
+        "last_action": "Buy",
+        "action_date": "2026-04-07"
     },
     {
         "ticker": "EEFT",
         "name": "EURONET WORLDWIDE INC",
         "frequency_days": 1,
-        "last_run": "2026-04-06",
+        "last_run": "2026-04-07",
         "last_action": "buy",
         "action_date": "2026-02-16"
     },
@@ -106,7 +106,7 @@
         "ticker": "PYPL",
         "name": "PAYPAL HOLDINGS INC",
         "frequency_days": 1,
-        "last_run": "2026-04-06",
+        "last_run": "2026-04-07",
         "last_action": "buy",
         "action_date": "2026-03-27"
     },
@@ -114,7 +114,7 @@
         "ticker": "QFIN",
         "name": "QFIN HLDGS SP ADS-A",
         "frequency_days": 1,
-        "last_run": "2026-04-06",
+        "last_run": "2026-04-07",
         "last_action": "buy",
         "action_date": "2026-03-16"
     }
